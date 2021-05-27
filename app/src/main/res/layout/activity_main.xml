@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/search_word"
+        android:layout_width="181dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/search"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="SEARCH"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gallery" />
+
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="GALLERY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="100dp"
+    android:background="@color/gainsboro">
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="320dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="164dp"
+        android:horizontalSpacing="0dp"
+        android:numColumns="20"
+        android:verticalSpacing="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="107dp"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/row2"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintTop_toBottomOf="@+id/row1" />
+
+    <TextView
+        android:id="@+id/row3"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row2" />
+
+    <TextView
+        android:id="@+id/row4"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row3" />
+
+    <TextView
+        android:id="@+id/row5"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row4" />
+
+    <TextView
+        android:id="@+id/row6"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row5" />
+
+    <TextView
+        android:id="@+id/row7"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row6" />
+
+    <TextView
+        android:id="@+id/row8"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row7" />
+
+    <TextView
+        android:id="@+id/row9"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row8" />
+
+    <TextView
+        android:id="@+id/row10"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row9" />
+
+    <TextView
+        android:id="@+id/row11"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row10" />
+
+    <TextView
+        android:id="@+id/row12"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row11" />
+
+    <TextView
+        android:id="@+id/row13"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row12" />
+
+    <TextView
+        android:id="@+id/row14"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row13" />
+
+    <TextView
+        android:id="@+id/row15"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row14" />
+
+    <TextView
+        android:id="@+id/row16"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row15" />
+
+    <TextView
+        android:id="@+id/row17"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row16" />
+
+    <TextView
+        android:id="@+id/row18"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row17" />
+
+    <TextView
+        android:id="@+id/row19"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row18" />
+
+    <TextView
+        android:id="@+id/row20"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row19" />
+
+    <TextView
+        android:id="@+id/col1"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="317dp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/col2"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/col1"
+        app:layout_constraintBottom_toTopOf="@id/gridView" />
+
+    <TextView
+        android:id="@+id/col3"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/col2"
+        app:layout_constraintBottom_toTopOf="@id/gridView" />
+
+    <TextView
+        android:id="@+id/col4"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col3" />
+
+    <TextView
+        android:id="@+id/col5"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col4" />
+
+    <TextView
+        android:id="@+id/col6"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col5" />
+
+    <TextView
+        android:id="@+id/col7"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col6" />
+
+    <TextView
+        android:id="@+id/col8"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col7" />
+
+    <TextView
+        android:id="@+id/col9"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col8" />
+
+    <TextView
+        android:id="@+id/col10"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col9" />
+
+    <TextView
+        android:id="@+id/col11"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col10" />
+
+    <TextView
+        android:id="@+id/col12"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col11" />
+
+    <TextView
+        android:id="@+id/col13"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col12" />
+
+    <TextView
+        android:id="@+id/col14"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col13" />
+
+    <TextView
+        android:id="@+id/col15"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col14" />
+
+    <TextView
+        android:id="@+id/col16"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col15" />
+
+    <TextView
+        android:id="@+id/col17"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col16" />
+
+    <TextView
+        android:id="@+id/col18"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col17" />
+
+    <TextView
+        android:id="@+id/col19"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col18" />
+
+    <TextView
+        android:id="@+id/col20"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        app:layout_constraintStart_toEndOf="@id/col19" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
